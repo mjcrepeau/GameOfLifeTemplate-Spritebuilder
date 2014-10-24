@@ -1729,7 +1729,7 @@
 										<key>value</key>
 										<array>
 											<string></string>
-											<string>GameOfLifeAssets/Buttons/play-pressed.png</string>
+											<string></string>
 										</array>
 									</dict>
 									<dict>
@@ -1753,7 +1753,7 @@
 										<key>value</key>
 										<array>
 											<string></string>
-											<string>ccbResources/ccbButtonNormal.png</string>
+											<string></string>
 										</array>
 									</dict>
 									<dict>
