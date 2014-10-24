@@ -1712,14 +1712,6 @@
 									</dict>
 									<dict>
 										<key>name</key>
-										<string>togglesSelectedState</string>
-										<key>type</key>
-										<string>Check</string>
-										<key>value</key>
-										<true/>
-									</dict>
-									<dict>
-										<key>name</key>
 										<string>backgroundSpriteFrame|Normal</string>
 										<key>type</key>
 										<string>SpriteFrame</string>
