@@ -32,7 +32,7 @@
 {
 	//this tells the game to call a method called 'step' every half second.
 	[self schedule:@selector(step) interval:0.5f];
-	//playButton.togglesSelectedState = YES;
+	_playButton.togglesSelectedState = YES;
 }
 
 - (void)pause
