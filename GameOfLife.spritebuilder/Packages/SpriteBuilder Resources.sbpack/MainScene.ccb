@@ -1335,7 +1335,7 @@
 										<string>Block</string>
 										<key>value</key>
 										<array>
-											<string>pausee</string>
+											<string>pause</string>
 											<integer>1</integer>
 										</array>
 									</dict>
@@ -1590,8 +1590,6 @@
 										</array>
 									</dict>
 								</array>
-								<key>selected</key>
-								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -1601,7 +1599,7 @@
 								<key>children</key>
 								<array/>
 								<key>customClass</key>
-								<string></string>
+								<string>_playButton</string>
 								<key>displayName</key>
 								<string>CCButton</string>
 								<key>memberVarAssignmentName</key>
@@ -1918,6 +1916,8 @@
 										</array>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 						</array>
 						<key>customClass</key>
