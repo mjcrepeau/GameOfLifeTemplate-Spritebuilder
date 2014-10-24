@@ -33,6 +33,7 @@ static const int GRID_COLUMNS = 10;
 
 - (void)countNeighbors
 {
+	int _numAlive = 0;
 	// iterate through the rows
 	// note that NSArray has a method 'count' that will return the number of elements in the array
 	for (int i = 0; i < [_gridArray count]; i++)
@@ -65,12 +66,15 @@ static const int GRID_COLUMNS = 10;
 				  if (neighbor.isAlive)
 				  {
 					  currentCreature.livingNeighbors += 1;
+					  _numAlive++;
 				  }
 			  }
 		  }
 	  }
   }
 	}
+	
+	_totalAlive = _numAlive;
 }
 
 - (BOOL)isIndexValidForX:(int)x andY:(int)y
@@ -85,8 +89,6 @@ static const int GRID_COLUMNS = 10;
 
 - (void)updateCreatures
 {
-	int _numAlive = 0;
-	
 	for (int i = 0; i < [_gridArray count]; i++)
 	{
   // iterate through all the columns for a given row
@@ -98,7 +100,6 @@ static const int GRID_COLUMNS = 10;
 	  if (currentCreature.livingNeighbors == 3)
 	  {
 		  currentCreature.isAlive = TRUE;
-		  _numAlive++;
 	  }
 	  
 	  else if (currentCreature.livingNeighbors <= 1 || currentCreature.livingNeighbors >= 4)
@@ -109,7 +110,7 @@ static const int GRID_COLUMNS = 10;
   }
 	}
 	
-	_totalAlive = _numAlive;
+
 	
 }
 
