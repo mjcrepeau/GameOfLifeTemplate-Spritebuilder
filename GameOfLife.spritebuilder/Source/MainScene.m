@@ -14,7 +14,7 @@
 	CCTimer *_timer;
 	CCLabelTTF *_generationLabel;
 	CCLabelTTF *_populationLabel;
-	CCButton *playButton;
+	CCButton *_playButton;
 }
 
 - (id)init
