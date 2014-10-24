@@ -1603,7 +1603,7 @@
 								<key>displayName</key>
 								<string>CCButton</string>
 								<key>memberVarAssignmentName</key>
-								<string></string>
+								<string>_playButton</string>
 								<key>memberVarAssignmentType</key>
 								<integer>1</integer>
 								<key>properties</key>
