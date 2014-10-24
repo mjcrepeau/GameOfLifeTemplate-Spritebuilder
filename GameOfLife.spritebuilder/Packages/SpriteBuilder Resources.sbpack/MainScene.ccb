@@ -1777,6 +1777,14 @@
 									</dict>
 									<dict>
 										<key>name</key>
+										<string>backgroundOpacity|Selected</string>
+										<key>type</key>
+										<string>Float</string>
+										<key>value</key>
+										<real>1</real>
+									</dict>
+									<dict>
+										<key>name</key>
 										<string>labelOpacity|Selected</string>
 										<key>type</key>
 										<string>Float</string>
