@@ -14,6 +14,7 @@
 	CCTimer *_timer;
 	CCLabelTTF *_generationLabel;
 	CCLabelTTF *_populationLabel;
+	CCButton *_playButton;
 }
 
 - (id)init
@@ -30,7 +31,15 @@
 - (void)play
 {
 	//this tells the game to call a method called 'step' every half second.
-	[self schedule:@selector(step) interval:0.5f];
+	_playButton.togglesSelectedState = !_playButton.togglesSelectedState;
+	
+	if (_playButton.togglesSelectedState == YES) {
+		[self schedule:@selector(step) interval:0.5f];
+	}
+	else {
+		[self unschedule:@selector(step)];
+	}
+	
 }
 
 - (void)pause
